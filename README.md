@@ -90,7 +90,7 @@ Here is the usage message of the script:
 A you can see the script can start with predefined shapes (see samples in
 the _shapes_ directory) using the `shape` option.
 
-See [conwaylie site ](http://www.conwaylife.com/wiki/List_of_common_oscillators) for
+See [conwaylife site ](http://www.conwaylife.com/wiki/List_of_common_oscillators) for
 other shapes (I created the ones available after their list).
 
 ## Note

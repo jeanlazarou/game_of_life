@@ -72,6 +72,8 @@ The builder expects a block like:
 
 ## "game_of_life.rb" script usage
 
+Here is the usage message of the script:
+
   Usage: game_of_life.rb [options]
 
   Where options include:

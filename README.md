@@ -74,18 +74,18 @@ The builder expects a block like:
 
 Here is the usage message of the script:
 
-  Usage: game_of_life.rb [options]
+    Usage: game_of_life.rb [options]
 
-  Where options include:
-      -w, --width w                    Width for the board width (defaults to 20)
-      -h, --height h                   Height for the board height (defaults to 20)
-      -r, --rate sec                   Next generation rate (in seconds, can be a float)
-                                       (defaults to 2)
-      -n, --no-cycle-detection         Disable cycle detection and network restart
-                                       (defaults to 'enabled')
-      -s, --shape file                 A file containing a network shape as startup network
-                                       Using the network builder.
-      -?, --help                       Show this message
+    Where options include:
+        -w, --width w                    Width for the board width (defaults to 20)
+        -h, --height h                   Height for the board height (defaults to 20)
+        -r, --rate sec                   Next generation rate (in seconds, can be a float)
+                                         (defaults to 2)
+        -n, --no-cycle-detection         Disable cycle detection and network restart
+                                         (defaults to 'enabled')
+        -s, --shape file                 A file containing a network shape as startup network
+                                         Using the network builder.
+        -?, --help                       Show this message
 
 A you can see the script can start with predefined shapes (see samples in
 the _shapes_ directory) using the `shape` option.

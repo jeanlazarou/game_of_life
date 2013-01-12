@@ -12,13 +12,13 @@ The way the cells live follows next rules:
 - if a cell has 3 neighbours cell they generate 1
 
 See [Conway's Game of Life](http://en.wikipedia.org/wiki/Conway's_Game_of_Life), 
-[also](http://www.tech.org/~stuart/life/rules.html).
+and also [the rules summary](http://www.tech.org/~stuart/life/rules.html).
 
 The project
 -----------
 
 The implemenation was inspired by episode #13 from Ruby Tapas: Singleton Object 
-(see [ http://devblog.avdi.org/2012/10/22/rubytapas-episode-13-singleton-objects/](http://devblog.avdi.org/2012/10/22/rubytapas-episode-13-singleton-objects/).
+(see [http://devblog.avdi.org/2012/10/22/rubytapas-episode-13-singleton-objects/](http://devblog.avdi.org/2012/10/22/rubytapas-episode-13-singleton-objects/)).
 
 It starts with a random network, then applies the above rules.
 
@@ -56,19 +56,21 @@ creating networks (see the test in `tests.rb`).
 
 The builder expects a block like:
 
-    net = NetBuilder.build {
-       head '  0 1 2 3 4 5 6 7 8 9'
-       line '0 . . . . . . . . . .'
-       line '1 . . . . . . . . . .'
-       line '2 . . . . . . . . . .'
-       line '3 . . # # . . . . . .'
-       line '4 . . . . . . # . . .'
-       line '5 . . . . . # . . . .'
-       line '6 . . . . # . . . . .'
-       line '7 . . . . . . . . . .'
-       line '8 . . . . . . . . . .'
-       line '9 . . . . . . . . . #'
-    }
+```ruby
+net = NetBuilder.build {
+   head '  0 1 2 3 4 5 6 7 8 9'
+   line '0 . . . . . . . . . .'
+   line '1 . . . . . . . . . .'
+   line '2 . . . . . . . . . .'
+   line '3 . . # # . . . . . .'
+   line '4 . . . . . . # . . .'
+   line '5 . . . . . # . . . .'
+   line '6 . . . . # . . . . .'
+   line '7 . . . . . . . . . .'
+   line '8 . . . . . . . . . .'
+   line '9 . . . . . . . . . #'
+}
+```
 
 ## "game_of_life.rb" script usage
 

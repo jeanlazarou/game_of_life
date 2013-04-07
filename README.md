@@ -30,10 +30,11 @@ last states to detect such cases and restart a new random network.
 
 The output is a simple Text UI (terminal output) using the cursus library.
 
-As it only runs on Unix-like systems, I added a basic implementation of the 
+As it only runs on Unix-like systems, I created a basic implementation of the 
 curses library for jRuby using the Java/Swing GUI layer, so that it can run
 on all systems. The curses support is limited to make the game run and is 
-not 'curses' compatible.
+not 'curses' compatible. The library is available as a gem 
+on [https://github.com/jeanlazarou/jruby_curses](https://github.com/jeanlazarou/jruby_curses).
 
 ## Running the game
 

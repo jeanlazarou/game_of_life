@@ -28,7 +28,7 @@ last states to detect such cases and restart a new random network.
 
 ## Output
 
-The output is a simple Text UI (terminal output) using the cursus library.
+The output is a simple Text UI (terminal output) using the curses library.
 
 As it only runs on Unix-like systems, I created a basic implementation of the 
 curses library for jRuby using the Java/Swing GUI layer, so that it can run
@@ -96,10 +96,13 @@ the _shapes_ directory) using the `shape` option.
 See [conwaylife site ](http://www.conwaylife.com/wiki/List_of_common_oscillators) for
 other shapes (I created the ones available after their list).
 
-## Note
+## Notes
 
-Unfortunately, both RMI 1.9.2 and 1.9.3 did not include 'curses' after
+* Unfortunately, both MRI 1.9.2 and 1.9.3 did not include 'curses' after
 installing them with rvm, I managed to make it work by copying the 
-'curses.so' from 1.9.1 to 'lib/ruby/1.9.1/i686-linux'.
+`curses.so` file from 1.9.1 to `lib/ruby/1.9.1/i686-linux`.
+* As of Ruby 2.1 the curses library is not part of the standard library anymore, 
+and is available as a Ruby gem ([https://github.com/ruby/curses](https://github.com/ruby/curses)).
+* The _curses_ gem also works fine with the [Rubinius](http://rubini.us/) implementation of Ruby.
 
-- Jean Lazarou
+ \- Jean Lazarou
